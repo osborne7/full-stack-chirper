@@ -130,7 +130,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar ex
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar express = __webpack_require__(/*! express */ \"express\");\nvar path = __webpack_require__(/*! path */ \"path\");\nvar routes_1 = __webpack_require__(/*! ./routes */ \"./src/server/routes/index.ts\");\n// import cors from 'cors';\nvar app = express();\nvar p = path.join(__dirname, '../public');\nconsole.log(p);\n// app.use(cors());\napp.use(express.static(p));\napp.use(express.json());\napp.use(routes_1.default);\nvar port = process.env.PORT || 3011;\napp.listen(port, function () { return console.log(\"Server listening on port: \" + port); });\n\n\n//# sourceURL=webpack:///./src/server/server.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar express = __webpack_require__(/*! express */ \"express\");\nvar path = __webpack_require__(/*! path */ \"path\");\nvar routes_1 = __webpack_require__(/*! ./routes */ \"./src/server/routes/index.ts\");\n// import cors from 'cors';\nvar app = express();\nvar p = path.join(__dirname, '../public');\nconsole.log(p);\n// app.use(cors());\napp.use(express.static(p));\napp.use(express.json());\napp.use(routes_1.default);\nvar port = process.env.PORT || 3011;\napp.listen(port, function () { return console.log(\"Server listening on port: \" + port); });\nvar mysql = __webpack_require__(/*! mysql */ \"mysql\");\nvar connection = mysql.createConnection({\n    host: 'localhost',\n    user: 'chirpapp',\n    password: 'password',\n    database: 'chirpr'\n});\nconnection.connect();\n\n\n//# sourceURL=webpack:///./src/server/server.ts?");
 
 /***/ }),
 
@@ -164,6 +164,17 @@ eval("module.exports = require(\"express\");\n\n//# sourceURL=webpack:///externa
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"fs\");\n\n//# sourceURL=webpack:///external_%22fs%22?");
+
+/***/ }),
+
+/***/ "mysql":
+/*!************************!*\
+  !*** external "mysql" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"mysql\");\n\n//# sourceURL=webpack:///external_%22mysql%22?");
 
 /***/ }),
 
