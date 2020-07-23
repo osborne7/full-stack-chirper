@@ -15,14 +15,3 @@ app.use(routes);
 
 const port = process.env.PORT || 3011;
 app.listen(port, () => console.log(`Server listening on port: ${port}`));
-
-var mysql = require('mysql');
-var connection = 
-mysql.createConnection({
-    host: 'localhost',
-    user: 'chirpapp',
-    password: 'password',
-    database: 'chirpr'
-});
-
-connection.connect();
