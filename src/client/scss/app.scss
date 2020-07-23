@@ -1,0 +1,102 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.nav {
+    margin: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 1em 0em;
+}
+
+.btn {
+    border-radius: 1em;
+    margin: 1em 0em;
+}
+.btn-info {
+    color: white
+}
+
+a {
+    color: white;
+    &:hover {
+        text-decoration-color: coral;
+        text-decoration-style: double;
+        color: white;
+    }
+}
+
+input {
+    margin: .5em;
+    display: inline-block;
+}
+
+.input-chirp {
+    width: 40em;
+}
+
+.name-div {
+    display: block;
+}
+
+.chirp-div {
+    display: block;
+}
+
+.chirp {
+    font-size: 2em;
+}
+
+.user {
+    color: coral;
+}
+
+.add-chirp {
+    border: 1px solid gray;
+    border-radius: 1em;
+    padding: 3em;
+}
+
+.edit {
+    border: 1px solid yellowgreen;
+    border-radius: 2em;
+    padding: 3em;
+    margin: 2em;
+}
+
+.delete {
+    border: 1px solid red;
+    border-radius: 2em;
+    padding: 3em;
+    margin: 2em;
+}
+
+.admin-div {
+    border: 1px solid gray;
+    border-radius: 1em;
+    padding: 3em;
+}
+
+.btn-warning {
+    margin: 2em;
+}
+
+.btn-secondary {
+    margin: 1em 0em;
+}
+
+.single-chirp {
+    padding: 3em;
+    border: 1px solid gray;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.label-name {
+    margin-right: 3.5em;
+}
+
+.label-chirp {
+    margin-right: 1em;
+}
