@@ -130,7 +130,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar ex
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar express = __webpack_require__(/*! express */ \"express\");\nvar path = __webpack_require__(/*! path */ \"path\");\nvar routes_1 = __webpack_require__(/*! ./routes */ \"./src/server/routes/index.ts\");\n// import cors from 'cors';\nvar app = express();\nvar p = path.join(__dirname, '../public');\nconsole.log(p);\n// app.use(cors());\napp.use(express.static(p));\napp.use(express.json());\napp.use(routes_1.default);\nvar port = process.env.PORT || 3010;\napp.listen(port, function () { return console.log(\"Server listening on port: \" + port); });\n\n\n//# sourceURL=webpack:///./src/server/server.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar express = __webpack_require__(/*! express */ \"express\");\nvar path = __webpack_require__(/*! path */ \"path\");\nvar routes_1 = __webpack_require__(/*! ./routes */ \"./src/server/routes/index.ts\");\n// import cors from 'cors';\nvar app = express();\nvar p = path.join(__dirname, '../public');\nconsole.log(p);\n// app.use(cors());\napp.use(express.static(p));\napp.use(express.json());\napp.use(routes_1.default);\nvar port = process.env.PORT || 3011;\napp.listen(port, function () { return console.log(\"Server listening on port: \" + port); });\n\n\n//# sourceURL=webpack:///./src/server/server.ts?");
 
 /***/ }),
 
